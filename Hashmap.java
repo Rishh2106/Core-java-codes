@@ -22,5 +22,11 @@ public class Hashmap {
             System.out.println(e.getKey());
             System.out.println(e.getValue());
         }
+
+        Set<String> Key=hm.keySet();                                                            //Second way to iterate in a HashMap
+        for(String key:Key)
+        {
+            System.out.println(key + " " +hm.get(key));
+        }
     }
 }
