@@ -29,13 +29,19 @@ public class InterfaceAndAbstractClass {
             return "Hello " + greetName;
         }
     }
+    public class bleh{
+        
+    }
     public static void main(String[] args) {
-        InnerClass obj = new InterfaceAndAbstractClass().new InnerClass();
+        InnerClass obj = new InterfaceAndAbstractClass().new InnerClass();         //Creating object of the inner class that implements the interface
         obj.information();
         System.out.println(obj.greet("Rishi"));
-        absClassExample obj2 =new InterfaceAndAbstractClass().new absClassExample();
+        System.out.println("--------------------------------");
+        absClassExample obj2 =new InterfaceAndAbstractClass().new absClassExample();   //Creating object of the abstract class
         obj2.absDisplay();
         obj2.personInfo("Rishi", 20);
+        System.out.println("--------------------------------");
+        
     }
     
 }
